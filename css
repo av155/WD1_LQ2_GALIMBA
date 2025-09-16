@@ -1,0 +1,171 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Sticky Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .left {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .center a,
+nav .right a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+nav .center a:hover,
+nav .right a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Main content takes 80% */
+main {
+  flex: 0 0 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Aside takes 20% */
+aside {
+  flex: 0 0 20%;
+  padding: 10px;
+}
+
+/* Post Styling */
+.post {
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  margin: 0 0 10px;
+  color: #1877f2;
+}
+
+.post p {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.actions button {
+  background: #f0f2f5;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actions button:hover {
+  background: #e4e6eb;
+}
+
+/* Aside: My Info */
+.my-info {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.my-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Friends List */
+.friends {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.friends h3 {
+  margin-top: 0;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.friend img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.friend span {
+  flex: 1;
+  font-size: 14px;
+}
+
+.friend button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.friend button:hover {
+  background: #145db2;
+}
